@@ -6,7 +6,10 @@ import config from './config/environment';
 const App = Application.extend({
   modulePrefix: config.modulePrefix,
   podModulePrefix: config.podModulePrefix,
-  Resolver
+  Resolver,
+  customEvents: {
+    customEvent: 'customEvent'
+  }
 });
 
 loadInitializers(App, config.modulePrefix);
